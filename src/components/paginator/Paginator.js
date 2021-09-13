@@ -241,7 +241,7 @@ export class Paginator extends Component {
                     {leftElement}
                     <div className={this.props.templateClassName}>
                         {elements}
-                    <div>
+                    </div>
                     {rightElement}
                 </div>
             ); 
