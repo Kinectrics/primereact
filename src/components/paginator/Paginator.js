@@ -244,7 +244,7 @@ export class Paginator extends Component {
                     <div>
                     {rightElement}
                 </div>
-            );
+            ); 
         }
     }
 }
