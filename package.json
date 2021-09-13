@@ -74,7 +74,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --setupFilesAfterEnv ./src/setupTests.js",
     "eject": "react-scripts eject",
-    "build-lib": "NODE_ENV=production rollup -c && gulp build-resources && npm run build-api",
+    "build-lib": "set NODE_ENV=production rollup -c && gulp build-resources && npm run build-api",
     "build-api": "node ./api-generator/build-api.js"
   },
   "eslintConfig": {
