@@ -21,6 +21,7 @@ export class Paginator extends Component {
         style: null,
         className: null,
         template: 'FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown',
+        templateClassName: null,
         onPageChange: null,
         leftContent: null,
         rightContent: null,
@@ -38,6 +39,7 @@ export class Paginator extends Component {
         style: PropTypes.object,
         className: PropTypes.string,
         template: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+        templateClassName: PropTypes.string,
         onPageChange: PropTypes.func,
         leftContent: PropTypes.any,
         rightContent: PropTypes.any,
@@ -241,7 +243,9 @@ export class Paginator extends Component {
             return (
                 <div className={className} style={this.props.style}>
                     {leftElement}
-                    {elements}
+                    <div className={this.props.templateClassName}>
+                        {elements}
+                    <div>
                     {rightElement}
                 </div>
             );
